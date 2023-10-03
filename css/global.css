@@ -240,7 +240,7 @@ header .navbar .nav-list .manu-nav .btn {
   color: #fff;
   min-height: 100vh;
   position: relative;
-  background-image: url("../../images/banner/bg-shading.png");
+  background-image: url("../images/banner/bg-shading.png");
   background-repeat: no-repeat;
   -o-object-fit: contain;
      object-fit: contain;
@@ -855,85 +855,73 @@ nav .btn-outline {
   }
 }
 
+/********** Range Input Styles **********/
+/*Range Reset*/
 input[type="range"] {
-  /* removing default appearance */
   -webkit-appearance: none;
   -moz-appearance: none;
        appearance: none;
-  /* creating a custom design */
-  width: 100%;
+  background: transparent;
   cursor: pointer;
+  width: 15rem;
+}
+
+/* Removes default focus */
+input[type="range"]:focus {
   outline: none;
-  /*  slider progress trick  */
-  overflow: hidden;
-  border-radius: 16px;
 }
 
-/* Track: webkit browsers */
+/***** Chrome, Safari, Opera and Edge Chromium styles *****/
+/* slider track */
 input[type="range"]::-webkit-slider-runnable-track {
-  height: 15px;
-  background: #ccc;
-  border-radius: 16px;
+  background-color: #053a5f;
+  border-radius: 0.5rem;
+  height: 0.5rem;
 }
 
-/* Track: Mozilla Firefox */
-input[type="range"]::-moz-range-track {
-  height: 15px;
-  background: #ccc;
-  border-radius: 16px;
-}
-
-/* Thumb: webkit */
+/* slider thumb */
 input[type="range"]::-webkit-slider-thumb {
-  /* removing default appearance */
   -webkit-appearance: none;
+  /* Override default look */
   appearance: none;
-  /* creating a custom design */
-  height: 15px;
-  width: 15px;
-  background-color: #fff;
-  border-radius: 50%;
-  border: 2px solid #f50;
-  /*  slider progress trick  */
-  -webkit-box-shadow: -407px 0 0 400px #f50;
-          box-shadow: -407px 0 0 400px #f50;
+  margin-top: -12px;
+  /* Centers thumb on the track */
+  /*custom styles*/
+  background-color: #5cd5eb;
+  height: 2rem;
+  width: 1rem;
 }
 
-/* Thumb: Firefox */
+input[type="range"]:focus::-webkit-slider-thumb {
+  border: 1px solid #053a5f;
+  outline: 3px solid #053a5f;
+  outline-offset: 0.125rem;
+}
+
+/******** Firefox styles ********/
+/* slider track */
+input[type="range"]::-moz-range-track {
+  background-color: #053a5f;
+  border-radius: 0.5rem;
+  height: 0.5rem;
+}
+
+/* slider thumb */
 input[type="range"]::-moz-range-thumb {
-  height: 30px;
-  width: 30px;
-  background-color: #fff;
-  border-radius: 50%;
-  border: 1px solid #f50;
-  /*  slider progress trick  */
-  box-shadow: -407px 0 0 400px #f50;
+  border: none;
+  /*Removes extra border that FF applies*/
+  border-radius: 0;
+  /*Removes default border-radius that FF applies*/
+  /*custom styles*/
+  background-color: #5cd5eb;
+  height: 2rem;
+  width: 1rem;
 }
 
-.wrapper {
-  color: #4b4949;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0 auto;
-}
-
-.range {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  background: #fff;
+input[type="range"]:focus::-moz-range-thumb {
+  border: 1px solid #053a5f;
+  outline: 3px solid #053a5f;
+  outline-offset: 0.125rem;
 }
 
 .container {
