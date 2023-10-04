@@ -30,7 +30,7 @@
                     transform: unset ;
                     display: flex;
                     flex-direction: column;
-                    gap: 1rem;
+                    gap: 1.5rem;
                 }
 
 
@@ -53,6 +53,13 @@
                     @include font-size(20px);  
                     color: $white_color;
                     padding-right: 10%;
+                }
+
+                .btn-group{
+                    .text-primary{
+                        color: $secondary_color;
+                        font-weight: 400;
+                    }
                 }
             }
         }

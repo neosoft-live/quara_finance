@@ -279,7 +279,7 @@ header .navbar .nav-list .manu-nav .btn {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .hero-section .hero-slider .slider-content .slider-body .slider-sub-heading {
@@ -302,6 +302,11 @@ header .navbar .nav-list .manu-nav .btn {
   line-height: 20px;
   color: #fff;
   padding-right: 10%;
+}
+
+.hero-section .hero-slider .slider-content .slider-body .btn-group .text-primary {
+  color: #201747;
+  font-weight: 400;
 }
 
 .hero-section .hero-slider .slick-arrow {
@@ -402,8 +407,8 @@ header .navbar .nav-list .manu-nav .btn {
   display: inline-block;
   text-decoration: none;
   color: #fff;
-  padding: 1rem 2rem;
-  font-size: 15px;
+  padding: 1.5rem 3rem;
+  font-size: 18px;
   text-transform: uppercase;
 }
 
