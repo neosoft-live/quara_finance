@@ -43,6 +43,12 @@ header{
                     padding: 1rem;
                 }
             }
+
+            .btn{
+                padding: 1rem 2rem;
+            }
+
+            
             @media (max-width: 992px) {
                 .nav-item{
                     display: none ;
