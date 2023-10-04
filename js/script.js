@@ -29,3 +29,10 @@ $(window).on("scroll", function() {
         $("header").removeClass("active-scroll");
     }
   });
+
+
+  $(".tab-list .tab-link").click((e)=>{
+        
+      $(".tab-content .tab-iteam").removeClass("active");
+      $($(e.target).attr("data-target")).addClass("active");
+  });

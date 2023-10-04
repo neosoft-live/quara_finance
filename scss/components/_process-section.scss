@@ -206,76 +206,201 @@
             }
         }
     }
+
+    .finance-calculator.row{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        border:5px solid #F3F4F5;
+        margin-bottom: 5rem;
+
+
+        .col-left{
+            padding: 3rem;
+            .finance-title{
+                @include font-size(24px);
+                font-weight: 400;
+                color: $secondary_color;
+            }
+
+            .tab-list{
+                list-style-type: none;
+                display: flex;
+                flex-wrap: wrap;
+                @include marginY(2rem);
+                li{
+                    flex:1;
+                }
+
+                .tab-link{
+                    font-size: 14px;
+                    font-weight: 300;
+                    border: 1px solid #D8D8D8;
+                    color: $secondary_color;
+                    display: block;
+                    padding: 24px;
+                    text-align: center;
+                    transition: 0.5s;
+                    height: 62px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+
+                    &.active, &:hover{
+                        border-color: $secondary_color;
+                        color: $secondary_color;
+                        font-weight: 300;
+                    }
+                }
+            }
+
+            .tab-content{
+                .tab-iteam{
+                    display: none;
+
+
+                    .label-justify-content{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        flex-wrap: wrap;
+
+
+                        label{
+                            font-size: 16px;
+                            font-weight: 200;
+                        }
+
+                        .input-group{
+                            display: flex;
+                            align-items: center;
+                            .form-control,span{
+                                flex: 1;
+                                display: block;
+                                border: 1px solid #D8D8D8;
+                                padding: 15px;
+                                height: 42px;
+                                font-size: 18px;
+                                color: $secondary_color;
+                                font-weight: 300;
+                                &[type="number"]{
+                                    width: 100px;
+                                }
+                            }
+                        }
+
+                        p{
+                            color: #666666;
+                            font-size: 14px;
+                        }
+                    }
+
+                    .form-content{
+                        
+                    }
+
+                    &.active{
+                        display: block;
+                    }
+
+                    .wrapper{
+                        padding-top: 1rem;
+                        padding-bottom: 0.5rem;
+                        input[type="range"]{
+                            width: 100%;
+                        }
+                    }
+
+                    select{
+                        color: #0F213C;
+                        border: 0px;
+                        border-bottom: 1px solid #0F213C;
+                    }
+
+                }
+            }
+
+        }
+
+        .col-right{
+            background-color: #F3F4F5;
+            padding: 3rem 0px;
+
+            .label-justify-content{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                padding: 1rem 3rem;
+                border-bottom: 1px solid #DFDFDF;
+
+                h3{
+                    @include font-size(24px);
+                    font-weight: 300;
+                    
+                }
+                h2{
+                    @include font-size(36px);
+                    font-weight: 300;
+
+                }
+            }
+
+            .msg-box-center{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 1.5rem;
+                margin-top: 2rem;
+
+                p{
+                    font-size: 16px ;
+                    color: #222222;
+                    font-weight: 100;
+                }
+                b{
+                    font-weight: 300;
+                }
+            }
+        }
+
+        @media (max-width:990px) {
+            grid-template-columns: auto;
+
+            .col-left{
+                padding: 3rem 1rem;
+            }
+            .col-right{
+                padding: 1rem 0rem;
+
+                .label-justify-content{
+                    padding: 1rem 0.5rem;
+
+                    h3,h2{
+                        @include font-size(20px);
+                    }
+                }
+            }
+        }
+    }
 }
 
 
 
 
+@media (max-width:990px) {
+    .process-section .step-process-content .col-left .follow-content .follow-text-title{
+        text-wrap: wrap;
+    }
+}
 
-// Wrapper
-/********** Range Input Styles **********/
-/*Range Reset*/
-input[type="range"] {
-    -webkit-appearance: none;
-     appearance: none;
-     background: transparent;
-     cursor: pointer;
-     width: 15rem;
- }
- 
- /* Removes default focus */
- input[type="range"]:focus {
-   outline: none;
- }
- 
- /***** Chrome, Safari, Opera and Edge Chromium styles *****/
- /* slider track */
- input[type="range"]::-webkit-slider-runnable-track {
-    background-color: #053a5f;
-    border-radius: 0.5rem;
-    height: 0.5rem;  
- }
- 
- /* slider thumb */
- input[type="range"]::-webkit-slider-thumb {
-   -webkit-appearance: none; /* Override default look */
-    appearance: none;
-    margin-top: -12px; /* Centers thumb on the track */
- 
-    /*custom styles*/
-    background-color: #5cd5eb;
-    height: 2rem;
-    width: 1rem;
- }
- 
- input[type="range"]:focus::-webkit-slider-thumb {   
-   border: 1px solid #053a5f;
-   outline: 3px solid #053a5f;
-   outline-offset: 0.125rem; 
- }
- 
- /******** Firefox styles ********/
- /* slider track */
- input[type="range"]::-moz-range-track {
-    background-color: #053a5f;
-    border-radius: 0.5rem;
-    height: 0.5rem;
- }
- 
- /* slider thumb */
- input[type="range"]::-moz-range-thumb {
-    border: none; /*Removes extra border that FF applies*/
-    border-radius: 0; /*Removes default border-radius that FF applies*/
- 
-    /*custom styles*/
-    background-color: #5cd5eb;
-    height: 2rem;
-    width: 1rem;
- }
- 
- input[type="range"]:focus::-moz-range-thumb {
-   border: 1px solid #053a5f;
-   outline: 3px solid #053a5f;
-   outline-offset: 0.125rem; 
- }
- 
+
+.wrapper{
+    .range{
+        input[type="range"]{
+            
+            
+        }
+    }
+}

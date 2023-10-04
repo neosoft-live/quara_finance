@@ -143,7 +143,7 @@
                             <a href="#" class="btn btn-primary">Discover More</a>
                         </div>
                     </div>
-                    <div class="card "> <!-- add ".active" class -->
+                    <div class="card active"> <!-- add ".active" class -->
                         <picture class="img-box">
                             <img src="images/icons/coin.svg" alt="cash financing">
                         </picture>
@@ -250,46 +250,232 @@
                 </div> 
 
 
-                <div class="row finance-calulator">
+                <div class="row finance-calculator">
                     <div class="col-left">
-                        <h3 class="finance-title">Finance</h3>
+                        <h3 class="finance-title">Finance Type</h3>
                         <ul class="tab-list">
                             <li>
-                                <a href="#invoice" class="tab-link active">Invoice</a>
+                                <a href="javascript:void(0)" class="tab-link active" data-target="#invoice">Invoice</a>
                             </li>
                             <li>
-                                <a href="#cashloan" class="tab-link">Cash Loan</a>
+                                <a href="javascript:void(0)" class="tab-link" data-target="#cashloan">Cash Loan</a>
                             </li>
                             <li>
-                                <a href="#checkout" class="tab-link">Checkout</a>
+                                <a href="javascript:void(0)" class="tab-link" data-target="#checkout">Checkout</a>
                             </li>
                             <li>
-                                <a href="#voucher" class="tab-link">Voucher</a>
+                                <a href="javascript:void(0)" class="tab-link" data-target="#voucher">Voucher</a>
                             </li>
                         </ul>
 
                         <div class="tab-content">
-                            <div class="tab-iteam" id="invoice">
-                                <div class="form-control">
+                            <div class="tab-iteam active" id="invoice">
+                                <div class="form-content">
+                                    <div class="label-justify-content">
+                                        <label for="">Loan Amount : </label>
+                                        <div class="input-group">
+                                            <input type="number" class="form-control" value="5000">
+                                            <span>SAR</span>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper">
+                                        <div class="range">  
+                                          <input type="range"/>
+                                        </div>
+                                    </div>
+                                    <div class="label-justify-content">
+                                        <p>5000 SAR</p>
+                                        <p>30000 SAR</p>
+                                    </div>
+                                </div>
+                                <div class="form-content mt-5">
+                                    <div class="label-justify-content">
+                                        <label for="">Loan Tenure : 
+                                            <select name="" id="">
+                                                <option value="">In Months</option>
+                                                <option value="">In Years</option>
+                                            </select>
+                                        </label>
+                                        <div class="input-group">
+                                            <span>
+                                                <img src="images/icons/calendar-icon.svg" alt="">
+                                            </span>
+                                            <input type="number" class="form-control" value="60" style="width:90px">
+                                        </div>
+                                    </div>
+                                    <div class="wrapper">
+                                        <div class="range">  
+                                          <input type="range"/>
+                                        </div>
+                                    </div>
+                                    <div class="label-justify-content">
+                                        <p>6 Months</p>
+                                        <p>36 Months</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-iteam" id="cashloan">
+                                <div class="form-content">
                                     <div class="label-justify-content">
                                         <label for="">Loan Amount : </label>
                                         <div class="input-group">
                                             <input type="number" class="form-control">
                                             <span>SAR</span>
-
-                                            <div class="wrapper">
-                                                <div class="range">  
-                                                  <input type="range"/>
-                                                </div>
-                                            </div>
                                         </div>
+                                    </div>
+                                    <div class="wrapper">
+                                        <div class="range">  
+                                          <input type="range"/>
+                                        </div>
+                                    </div>
+                                    <div class="label-justify-content">
+                                        <p>5000 SAR</p>
+                                        <p>30000 SAR</p>
+                                    </div>
+                                </div>
+                                <div class="form-content mt-5">
+                                    <div class="label-justify-content">
+                                        <label for="">Loan Tenure : 
+                                            <select name="" id="">
+                                                <option value="">In Months</option>
+                                                <option value="">In Years</option>
+                                            </select>
+                                        </label>
+                                        <div class="input-group">
+                                            <span>
+                                                <img src="images/icons/calendar-icon.svg" alt="">
+                                            </span>
+                                            <input type="number" class="form-control" value="60" style="width:90px;">
+                                        </div>
+                                    </div>
+                                    <div class="wrapper">
+                                        <div class="range">  
+                                          <input type="range"/>
+                                        </div>
+                                    </div>
+                                    <div class="label-justify-content">
+                                        <p>6 Months</p>
+                                        <p>36 Months</p>
                                     </div>
                                 </div>
                             </div>
+                            <div class="tab-iteam" id="checkout">
+                                <div class="form-content">
+                                    <div class="label-justify-content">
+                                        <label for="">Loan Amount : </label>
+                                        <div class="input-group">
+                                            <input type="number" class="form-control" value="7000">
+                                            <span>SAR</span>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper">
+                                        <div class="range">  
+                                          <input type="range"/>
+                                        </div>
+                                    </div>
+                                    <div class="label-justify-content">
+                                        <p>5000 SAR</p>
+                                        <p>30000 SAR</p>
+                                    </div>
+                                </div>
+                                <div class="form-content mt-5">
+                                    <div class="label-justify-content">
+                                        <label for="">Loan Tenure : 
+                                            <select name="" id="">
+                                                <option value="">In Months</option>
+                                                <option value="">In Years</option>
+                                            </select>
+                                        </label>
+                                        <div class="input-group">
+                                            <span>
+                                                <img src="images/icons/calendar-icon.svg" alt="">
+                                            </span>
+                                            <input type="number" class="form-control" value="60" style="width:90px;">
+                                        </div>
+                                    </div>
+                                    <div class="wrapper">
+                                        <div class="range">  
+                                          <input type="range"/>
+                                        </div>
+                                    </div>
+                                    <div class="label-justify-content">
+                                        <p>6 Months</p>
+                                        <p>36 Months</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-iteam" id="voucher">
+                                <div class="form-content">
+                                    <div class="label-justify-content">
+                                        <label for="">Loan Amount : </label>
+                                        <div class="input-group">
+                                            <input type="number" class="form-control">
+                                            <span>SAR</span>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper">
+                                        <div class="range">  
+                                          <input type="range"/>
+                                        </div>
+                                    </div>
+                                    <div class="label-justify-content">
+                                        <p>5000 SAR</p>
+                                        <p>30000 SAR</p>
+                                    </div>
+                                </div>
+                                <div class="form-content mt-5">
+                                    <div class="label-justify-content">
+                                        <label for="">Loan Tenure : 
+                                            <select name="" id="">
+                                                <option value="">In Months</option>
+                                                <option value="">In Years</option>
+                                            </select>
+                                        </label>
+                                        <div class="input-group">
+                                            <span>
+                                                <img src="images/icons/calendar-icon.svg" alt="">
+                                            </span>
+                                            <input type="number" class="form-control" style="width:90px">
+                                        </div>
+                                    </div>
+                                    <div class="wrapper">
+                                        <div class="range">  
+                                          <input type="range"/>
+                                        </div>
+                                    </div>
+                                    <div class="label-justify-content">
+                                        <p>6 Months</p>
+                                        <p>36 Months</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
                         </div>
                     </div>
                     <div class="col-right">
-
+                        <div class="table-list">
+                            <div class="label-justify-content">
+                                <h3>Monthly EMI</h3>
+                                <h2>1,134.34</h2>
+                            </div>
+                            <div class="label-justify-content">
+                                <h3>Total Interest</h3>
+                                <h2>4,030.27</h2>
+                            </div>
+                            <div class="label-justify-content">
+                                <h3>Payable Amount</h3>
+                                <h3>34,030.27</h3>
+                            </div>
+                            <div class="label-justify-content">
+                                <h3>ARP</h3>
+                                <h3>12%</h3>
+                            </div>
+                        </div>
+                        <div class="msg-box-center">
+                            <p>Click the button and <b>check your eligibility.</b></p>
+                            <a href="#" class="btn btn-primary">Apply Now</a>
+                        </div>
                     </div>
                 </div>
 

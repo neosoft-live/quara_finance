@@ -397,6 +397,7 @@ header .navbar .nav-list .manu-nav .btn {
   color: #fff;
   padding: 1rem 2rem;
   font-size: 15px;
+  text-transform: uppercase;
 }
 
 nav .btn-outline {
@@ -855,73 +856,230 @@ nav .btn-outline {
   }
 }
 
-/********** Range Input Styles **********/
-/*Range Reset*/
-input[type="range"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-       appearance: none;
-  background: transparent;
+.process-section .finance-calculator.row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  border: 5px solid #F3F4F5;
+  margin-bottom: 5rem;
+}
+
+.process-section .finance-calculator.row .col-left {
+  padding: 3rem;
+}
+
+.process-section .finance-calculator.row .col-left .finance-title {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #201747;
+}
+
+.process-section .finance-calculator.row .col-left .tab-list {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.process-section .finance-calculator.row .col-left .tab-list li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.process-section .finance-calculator.row .col-left .tab-list .tab-link {
+  font-size: 14px;
+  font-weight: 300;
+  border: 1px solid #D8D8D8;
+  color: #201747;
+  display: block;
+  padding: 24px;
+  text-align: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  height: 62px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   cursor: pointer;
-  width: 15rem;
 }
 
-/* Removes default focus */
-input[type="range"]:focus {
-  outline: none;
+.process-section .finance-calculator.row .col-left .tab-list .tab-link.active, .process-section .finance-calculator.row .col-left .tab-list .tab-link:hover {
+  border-color: #201747;
+  color: #201747;
+  font-weight: 300;
 }
 
-/***** Chrome, Safari, Opera and Edge Chromium styles *****/
-/* slider track */
-input[type="range"]::-webkit-slider-runnable-track {
-  background-color: #053a5f;
-  border-radius: 0.5rem;
-  height: 0.5rem;
+.process-section .finance-calculator.row .col-left .tab-content .tab-iteam {
+  display: none;
 }
 
-/* slider thumb */
-input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  /* Override default look */
-  appearance: none;
-  margin-top: -12px;
-  /* Centers thumb on the track */
-  /*custom styles*/
-  background-color: #5cd5eb;
-  height: 2rem;
-  width: 1rem;
+.process-section .finance-calculator.row .col-left .tab-content .tab-iteam .label-justify-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-input[type="range"]:focus::-webkit-slider-thumb {
-  border: 1px solid #053a5f;
-  outline: 3px solid #053a5f;
-  outline-offset: 0.125rem;
+.process-section .finance-calculator.row .col-left .tab-content .tab-iteam .label-justify-content label {
+  font-size: 16px;
+  font-weight: 200;
 }
 
-/******** Firefox styles ********/
-/* slider track */
-input[type="range"]::-moz-range-track {
-  background-color: #053a5f;
-  border-radius: 0.5rem;
-  height: 0.5rem;
+.process-section .finance-calculator.row .col-left .tab-content .tab-iteam .label-justify-content .input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-/* slider thumb */
-input[type="range"]::-moz-range-thumb {
-  border: none;
-  /*Removes extra border that FF applies*/
-  border-radius: 0;
-  /*Removes default border-radius that FF applies*/
-  /*custom styles*/
-  background-color: #5cd5eb;
-  height: 2rem;
-  width: 1rem;
+.process-section .finance-calculator.row .col-left .tab-content .tab-iteam .label-justify-content .input-group .form-control, .process-section .finance-calculator.row .col-left .tab-content .tab-iteam .label-justify-content .input-group span {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: block;
+  border: 1px solid #D8D8D8;
+  padding: 15px;
+  height: 42px;
+  font-size: 18px;
+  color: #201747;
+  font-weight: 300;
 }
 
-input[type="range"]:focus::-moz-range-thumb {
-  border: 1px solid #053a5f;
-  outline: 3px solid #053a5f;
-  outline-offset: 0.125rem;
+.process-section .finance-calculator.row .col-left .tab-content .tab-iteam .label-justify-content .input-group .form-control[type="number"], .process-section .finance-calculator.row .col-left .tab-content .tab-iteam .label-justify-content .input-group span[type="number"] {
+  width: 100px;
+}
+
+.process-section .finance-calculator.row .col-left .tab-content .tab-iteam .label-justify-content p {
+  color: #666666;
+  font-size: 14px;
+}
+
+.process-section .finance-calculator.row .col-left .tab-content .tab-iteam.active {
+  display: block;
+}
+
+.process-section .finance-calculator.row .col-left .tab-content .tab-iteam .wrapper {
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.process-section .finance-calculator.row .col-left .tab-content .tab-iteam .wrapper input[type="range"] {
+  width: 100%;
+}
+
+.process-section .finance-calculator.row .col-left .tab-content .tab-iteam select {
+  color: #0F213C;
+  border: 0px;
+  border-bottom: 1px solid #0F213C;
+}
+
+.process-section .finance-calculator.row .col-right {
+  background-color: #F3F4F5;
+  padding: 3rem 0px;
+}
+
+.process-section .finance-calculator.row .col-right .label-justify-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 1rem 3rem;
+  border-bottom: 1px solid #DFDFDF;
+}
+
+.process-section .finance-calculator.row .col-right .label-justify-content h3 {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 300;
+}
+
+.process-section .finance-calculator.row .col-right .label-justify-content h2 {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 300;
+}
+
+.process-section .finance-calculator.row .col-right .msg-box-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.process-section .finance-calculator.row .col-right .msg-box-center p {
+  font-size: 16px;
+  color: #222222;
+  font-weight: 100;
+}
+
+.process-section .finance-calculator.row .col-right .msg-box-center b {
+  font-weight: 300;
+}
+
+@media (max-width: 990px) {
+  .process-section .finance-calculator.row {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  .process-section .finance-calculator.row .col-left {
+    padding: 3rem 1rem;
+  }
+  .process-section .finance-calculator.row .col-right {
+    padding: 1rem 0rem;
+  }
+  .process-section .finance-calculator.row .col-right .label-justify-content {
+    padding: 1rem 0.5rem;
+  }
+  .process-section .finance-calculator.row .col-right .label-justify-content h3, .process-section .finance-calculator.row .col-right .label-justify-content h2 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 990px) {
+  .process-section .step-process-content .col-left .follow-content .follow-text-title {
+    text-wrap: wrap;
+  }
 }
 
 .container {
