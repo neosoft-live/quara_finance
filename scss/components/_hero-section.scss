@@ -140,6 +140,13 @@
             }
         }
 
+        
+
     }
 
+}
+@media (max-height:400px) {
+    .hero-section .hero-slider .slider-content .slider-body {
+                height: 600px !important;
+    }
 }
