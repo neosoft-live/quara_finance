@@ -210,12 +210,13 @@
     .finance-calculator.row{
         display: grid;
         grid-template-columns: 50% 50%;
-        border:5px solid #F3F4F5;
+        border:5px solid #E9E9E9;
         margin-bottom: 5rem;
 
 
         .col-left{
             padding: 3rem;
+            background-color: #fff;
             .finance-title{
                 @include font-size(24px);
                 font-weight: 400;
@@ -323,7 +324,7 @@
         }
 
         .col-right{
-            background-color: #F3F4F5;
+            background-color: #E9E9E9;
             padding: 3rem 0px;
 
             .label-justify-content{

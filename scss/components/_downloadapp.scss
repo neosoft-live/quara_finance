@@ -5,9 +5,10 @@
     padding-top: 5rem;
     .row{
         display: grid;
-        grid-template-columns: 45% 45%;
+        grid-template-columns: 45% clamp(200px, 45%, 400px);
         align-items: center;
         grid-gap: 10%;
+        justify-content: center;
 
         picture{
             width: 100%;
