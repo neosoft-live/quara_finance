@@ -1082,6 +1082,46 @@ nav .btn-outline {
   }
 }
 
+.download-section {
+  background-color: #201747;
+  padding-top: 5rem;
+}
+
+.download-section .row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 45% 45%;
+      grid-template-columns: 45% 45%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-gap: 10%;
+}
+
+.download-section .row picture {
+  width: 100%;
+}
+
+.download-section .row picture img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.download-section .row .heading-style-2 h2 {
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.download-section .row .heading-style-2 h2:before {
+  background-color: #fff;
+  top: -44px;
+}
+
+.download-section .row .col-right picture img {
+  width: 200px;
+}
+
 .container {
   margin-left: 50%;
   padding-left: 6rem;

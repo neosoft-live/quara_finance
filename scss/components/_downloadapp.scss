@@ -1,0 +1,38 @@
+
+
+.download-section{
+    background-color: #201747;
+    padding-top: 5rem;
+    .row{
+        display: grid;
+        grid-template-columns: 45% 45%;
+        align-items: center;
+        grid-gap: 10%;
+
+        picture{
+            width: 100%;
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .heading-style-2{
+           
+            h2{
+                color: #fff; 
+                margin-bottom: 2rem;
+                &:before{
+                    background-color: #fff;
+                    top:-44px;
+                }
+            }
+        }
+
+        .col-right{
+            picture img{
+                width: 200px;
+            }
+        }
+    }
+}
