@@ -18,10 +18,12 @@
         }
 
         .heading-style-2{
-           
+            padding-bottom: 3rem;
             h2{
                 color: #fff; 
                 margin-bottom: 2rem;
+                font-size: 32px;
+                line-height: 32px;
                 &:before{
                     background-color: #fff;
                     top:-44px;
@@ -35,4 +37,28 @@
             }
         }
     }
+
+
+    @media (max-width:776px) {
+        
+        .row{
+            grid-template-columns: auto;
+            
+
+        }
+        .col-left{
+            display: none;
+        }
+        .col-right{
+            padding: 0px 10%;
+        }
+
+        .heading-style-2{
+            h2 br{
+                display: none;
+            }
+            
+        }
+    }
 }
+
